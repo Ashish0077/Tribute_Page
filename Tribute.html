@@ -9,7 +9,16 @@
 <link rel="stylesheet" href="animate.css">
 
 <script>
+function myFunction() {
+    setTimeout(function(){ window.open("file:///E:/tribute%20page/Tribute2.html","_self"); }, 800);
+}
 $(document).ready(function(){
+  $("button").click(function()
+{
+  $("#image").addClass("animated lightSpeedOut");
+  $("#txt").addClass("animated fadeoutleft");
+  myFunction();
+})
 });
 </script>
 <style>
@@ -72,13 +81,18 @@ button{
     left: 0px;
     background: rgba(0, 0, 0, 0.7); /*can be anything, of course*/
 }
+}
 </style>
 <div class="overlay">
-  <img class="animated lightspeedin img-responsive img-circle" src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Sundar_Pichai_%28cropped%29.jpg" style="float:right;"></img>
+  <div id="image"><img class="animated lightspeedin img-responsive img-circle" src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Sundar_Pichai_%28cropped%29.jpg" style="float:right;"></img></div>
+  <div id="txt">
   <h1 class="animated slideinleft">Sundar Pichai</h1>
   <h2 class="animated slideinleft">"I Am Passionate About Developing Products<h2>
   <h3 class="animated slideinleft">That Make Lives Better And HopeFully"</h3>
   <div class="animated slideinleft">
-  <button onclick="animated fadeout" class="animated infinite pulse btn btn-info">Learn More</button>
+  <button class="animated infinite pulse btn btn-info">Learn More</button>
+  </div>
+  </div>
+  <div id="linfo">
   </div>
 </div>
