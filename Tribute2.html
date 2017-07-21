@@ -9,6 +9,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link rel="stylesheet" href="animate.css">
 
+<script>
+function myFunction() {
+    window.open("https://en.wikipedia.org/wiki/Sundar_Pichai");
+}
+$(document).ready(function(){
+  $("button").click(function()
+{
+  myFunction();
+})
+});
+</script>
+
 <style>
 body{
   color: white;
@@ -73,19 +85,22 @@ ul {
 div.scroll {
   overflow: scroll;
 }
-
+button{
+  margin-left: 50%;
+}
 </style>
 <div class="overlay">
   <ul>
-  <li id="l1" class="animated slideInLeft">Sundar Pichai is a huge cricket fan and was the captain of his school cricket team.</li>
-  <li id="l2" class="animated slideInLeft">His family did not possess a phone until he was 12.</li>
-  <li id="l3" class="animated slideInLeft">He once tried to talk a friend out of working at Google before joining the company himself.</li>
-  <li id="l4" class="animated slideInLeft">Sundar Pichai joined Google even before the company went public.</li>
-  <li id="l5" class="animated slideInLeft">He is very good at remembering numbers and could remember every telephone number he dialed when he was young.</li>
-  <li id="l6" class="animated slideInLeft">He interacts with students at IIT-Kharagpur over Skype at regular intervals.</li>
-  <li id="l7" class="animated slideInLeft">He was also one of the top contenders for the post of CEO at Microsoft, which ultimately went to Satya Nadella.</li>
-  <li id="l8" class="animated slideInLeft">The Google CEO is not at all “nerdy” as his appearance might suggest! He is actually very grounded, helpful and friendly.</li>
-  <li id="l9" class="animated slideInLeft">He has been the master of ceremonies at Google I/O for the past few years.</li>
-  <li id="l0" class="animated slideInLeft">It is rumoured that Twitter tried to poach Sundar Pichai, a few year back, while he was working at Google, but Google paid him an exorbitantly higher pay to retain him.</li>
+  <li id="l1" class="animated fadein">Sundar Pichai is a huge cricket fan and was the captain of his school cricket team.</li>
+  <li id="l2" class="animated fadein">His family did not possess a phone until he was 12.</li>
+  <li id="l3" class="animated fadein">He once tried to talk a friend out of working at Google before joining the company himself.</li>
+  <li id="l4" class="animated fadein">Sundar Pichai joined Google even before the company went public.</li>
+  <li id="l5" class="animated fadein">He is very good at remembering numbers and could remember every telephone number he dialed when he was young.</li>
+  <li id="l6" class="animated fadein">He interacts with students at IIT-Kharagpur over Skype at regular intervals.</li>
+  <li id="l7" class="animated fadein">He was also one of the top contenders for the post of CEO at Microsoft, which ultimately went to Satya Nadella.</li>
+  <li id="l8" class="animated fadein">The Google CEO is not at all “nerdy” as his appearance might suggest! He is actually very grounded, helpful and friendly.</li>
+  <li id="l9" class="animated fadein">He has been the master of ceremonies at Google I/O for the past few years.</li>
+  <li id="l0" class="animated fadein">It is rumoured that Twitter tried to poach Sundar Pichai, a few year back, while he was working at Google, but Google paid him an exorbitantly higher pay to retain him.</li>
 </ul>
+<button class="animated infinite pulse btn btn-info">More Info</button>
 </div>
